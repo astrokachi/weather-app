@@ -6,9 +6,7 @@ function App() {
     
   }
   
-  const handleMouseRelease = () => {
-    
-  }
+
 
   return (
     <div className="App">
