@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	font-family: "Montserrat";
+	color: #fff;
+	font-weight: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	height: 100vh;
+	width: 100vw;
+	max-width: 2500px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+	width: 100vw;
+	display: flex;
+	height: 100vh;
+	align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+	height: 85%;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	background: rgb(72, 53, 91);
+	background: linear-gradient(
+		45deg,
+		rgba(72, 53, 91, 1) 0%,
+		rgba(140, 110, 171, 1) 89%
+	);
+	border-radius: 4px;
+	display: flex;
+	flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.general {
+	width: 55%;
+	padding: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.metre {
+	flex-grow: 1;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		138deg,
+		rgba(255, 255, 255, 0.363) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	padding: 3%;
+	display: flex;
+	flex-direction: column;
+}
+
+.degree,
+.celcius {
+	display: flex;
+	color: #fff;
+}
+
+.o,
+.c {
+	font-weight: normal !important;
+	font-size: 28px;
+}
+
+.number {
+	/* font-family: "Poppins"; */
+	font-size: 124px;
+	line-height: calc(100%);
+	color: #fff;
+	font-weight: lighter !important;
+}
+
+.date {
+	padding-bottom: 7px;
+}
+
+.day {
+	display: flex;
+	gap: 4%;
+	padding-bottom: 14px;
+}
+
+.date_text {
+	font-weight: 400;
+}
+
+.day_text {
+	font-weight: 400;
+}
+
+.other_info {
+	display: flex;
+	gap: 2%;
+	font-size: 12px;
+	padding-bottom: 20px;
+}
+
+.wind_icon {
+	transform: rotate(44deg);
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.icon_con {
+	display: flex;
+	gap: 5%;
+}
+
+.hum_icon {
+	font-size: 16px;
+}
+
+.rain_icon {
+	font-size: 16px;
+}
+
+.cards {
+	display: flex;
+	gap: 4%;
+	overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.location_icon {
+	font-size: 20px;
+}
+
+.topbar {
+	display: flex;
+	justify-content: space-between;
+}
+
+.locate {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+
+.search_icon {
+	font-size: 20px;
+	padding: 10px;
+	background: linear-gradient(
+		116.79deg,
+		rgba(255, 255, 255, 0.48) 0%,
+		rgba(255, 255, 255, 0.12) 99.45%
+	);
+	backdrop-filter: blur(100px);
+	border-radius: 10px;
+}
+
+.midSection{
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 20px;
+}
+
+.line{
+	border-top: 1px solid rgba(255, 255, 255, 0.39);
+	width: 100%;
+}
+
+.metres{
+	display: flex;
+	gap: 20px;
 }

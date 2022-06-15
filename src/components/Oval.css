@@ -1,0 +1,48 @@
+.oval {
+	width: max-content;
+}
+
+.oval_con {
+	padding: 20px;
+	padding-top: 40px;
+	background: rgba(255, 255, 255, 0.26);
+	border-radius: 100px;
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.clock {
+	position: relative;
+}
+
+.hourhand {
+	border-top: 1px solid #000;
+	position: absolute;
+	width: 20px;
+	top: calc(37);
+	/* left: calc(0px); */
+	transform: rotate(0deg);
+}
+
+.minhand {
+	border-top: 1px solid rgb(112, 112, 112);
+	transform: rotate(30deg);
+	width: 20px;
+}
+
+.sechand {
+	border-top: 1px solid #885ffc;
+	transform: rotate(130deg);
+	width: 40px;
+}
+.clk_title {
+	text-align: center;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.ovaltime {
+	padding-bottom: 20px;
+}
